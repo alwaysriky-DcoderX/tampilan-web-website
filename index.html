@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FerdyNesia Studio - Produk Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+<!-- Pesan informasi -->
+<div id="info-message" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-xs w-80 bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-6 py-5 rounded-xl shadow-2xl flex flex-col items-center space-y-4 opacity-100 pointer-events-auto transition-opacity duration-500 z-50">
+    <span class="font-semibold text-sm md:text-base text-center leading-snug">
+        Selamat datang di Website Store FerdyCyberID!
+    </span>
+    <button aria-label="Close message" class="text-white text-2xl font-bold leading-none hover:text-gray-300 transition" onclick="closeInfo()">&times;</button>
+</div>
+
+<header class="bg-[#0050FF] flex items-center px-4 py-3 space-x-4">
+    <div class="text-white font-bold text-xl tracking-wide">
+        FerdyCyberID
+    </div>
+    <form class="flex-grow">
+        <label class="sr-only" for="search">Pencarian</label>
+        <input
+            class="w-full rounded-full py-2 px-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
+            id="search"
+            placeholder="Pencarian.." 
+            type="search" 
+        />
+    </form>
+    <button class="sr-only" type="submit">Search</button>
+</header>
+
+<main class="px-4 pt-4">
+    <h2 class="font-bold text-lg mb-3">Produk Terbaru</h2>
+    <div class="grid grid-cols-2 gap-3">
+
+        <!-- Card 1 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div> 
+            <img src="https://images.ghsz.tech/ferdy/1.jpg" alt="Product 1 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Free Fire Claim</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Free Fire Claim" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/2.jpg" alt="Product 2 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Free Fire Claim</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Free Fire Claim" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/3.jpg" alt="Product 3 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">MediaFire MP4</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk MediaFire MP4" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/4.jpg" alt="Product 4 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">MediaFire ZIP</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk MediaFire ZIP" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/5.jpg" alt="Product 5 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Grup WA</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Grup WA" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/6x.jpg" alt="Product 6 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Grup WA</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Grup WA" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/7.jpg" alt="Product 7 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Grup Join</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Grup Join" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/8.jpg" alt="Product 8 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Grup Join</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Grup Join" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/9.jpg" alt="Product 9 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Free Fire Claim</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Free Fire Claim" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/10.jpg" alt="Product 10 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Free Fire Claim</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Free Fire Claim" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/11.jpg" alt="Product 11 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Free Fire Claim</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Free Fire Claim" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/12.jpg" alt="Product 12 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px -2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Free Fire Claim</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Free Fire Claim" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/13.jpg" alt="Product 13 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Mobile Legends</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Mobile Legends" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/14.jpg" alt="Product 14 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Mobile Legends</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Mobile Legends" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/15.jpg" alt="Product 15 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Codashop FF</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Codashop FF" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/16.jpg" alt="Product 16 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Codashop ML</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Codashop ML" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/17.jpg" alt="Product 17 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Telegram 18+</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Telegram 18+" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/18.jpg" alt="Product 18 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Videy Video</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Videy Video" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 19 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/19.jpg" alt="Product 19 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Facebook 18+</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Facebook 18+" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 20 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/20.jpg" alt="Product 20 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Youtube Viral</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Youtube Viral" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 21 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/21.jpg" alt="Product 21 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Safefileku ZIP</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Safefileku ZIP" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+        <!-- Card 22 -->
+        <div class="rounded-lg overflow-hidden shadow-md bg-gray-800">
+            <div class="relative bg-[#0050FF] px-2 py-1">
+                <i class="fas fa-cloud text-white mr-1"></i>
+                <span class="text-white font-semibold text-sm">Produk Digital</span>
+            </div>
+            <img src="https://images.ghsz.tech/ferdy/22.jpg" alt="Product 22 image" class="w-full object-cover h-40" />
+            <div class="px-3 py-2 bg-gray-800">
+                <div class="inline-block bg-[#0050FF] text-white text-xs rounded px-2 py-0.5 mb-1">
+                    <i class="fas fa-boxes mr-1"></i>FERDYCYBERID
+                </div>
+                <p class="text-base font-normal leading-tight">Safefileku MP4</p>
+                <div class="text-lg font-bold text-[#F97316]">Rp 10.000</div>
+            </div>
+            <a href="https://wa.me/6281261479077?text=Halo, saya tertarik dengan produk Safefileku MP4" class="w-full bg-[#F97316] text-white font-semibold py-2 rounded-b-lg hover:bg-[#ea6f0f] transition text-center block">ORDER SEKARANG</a>
+        </div>
+
+    </div>
+</main>
+
+<script>
+    function closeInfo() {
+        const msg = document.getElementById('info-message');
+        msg.style.opacity = '0';
+        msg.style.pointerEvents = 'none';
+        setTimeout(() => {
+            msg.classList.add('hidden');
+        }, 500);
+    }
+</script>
+
+</body>
+</html>
